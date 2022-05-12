@@ -1,0 +1,240 @@
+
+/* navbar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(99, 0, 0);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    margin: .5rem;
+    font-family: 'Bebas Neue', 'cursive';
+
+}
+
+.navbar-links {
+    height: 100%;
+    font-family: 'Bebas Neue', 'cursive';
+    font-size: 1.2rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Home Screen */
+.homeimage {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.cntower.ca/modules/custom/de_common/img/cntower-skyline.jpg");
+    
+}
+
+.homecaption {
+    margin: 0;
+    text-align: center;
+    font-size: 8rem;
+    padding-top: 12%;
+    color: white;
+    font-family: 'Bebas Neue', 'cursive';
+
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.watermark {
+    margin: 0;
+    padding: 1.5rem;
+
+}
+
+.support {
+    text-align: center;
+    font-size: 5rem;
+    width: 100%;
+    /* height: 10em; */
+    font-family: 'Bebas Neue', 'cursive';
+    margin-top: 0%; 
+    padding-top: 4rem; 
+}
+
+.shopnow {
+    background-color: rgb(99, 0, 0);
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.shopnow:hover {
+    background-color: green;
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.supportdiv {
+    text-align: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding-bottom: 12rem;
+    margin-top: 0;
+}
+
+.supportp {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.about {
+    text-align: center;
+    font-size: 5rem;
+    width: 100%;
+    /* height: 10em; */
+    font-family: 'Bebas Neue', 'cursive';
+    margin-top: 0%; 
+    padding-top: 4rem; 
+    
+}
+
+.dsyimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 4rem;
+}
+
+.aboutp {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Radio Canada', sans-serif;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+
+
+
+
+
